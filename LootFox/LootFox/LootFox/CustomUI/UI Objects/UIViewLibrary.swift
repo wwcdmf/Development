@@ -328,7 +328,7 @@ class ShadedUIView: UIView {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 0.0)
         layer.shadowOpacity = 0.2
-        layer.shadowRadius = 20.0
+        layer.shadowRadius = 10.0
         
     }
     
@@ -342,7 +342,7 @@ class RoundedUIView: UIView {
         
         super.awakeFromNib()
         
-        self.layer.cornerRadius = 20.0
+        self.layer.cornerRadius = 10.0
         self.layer.masksToBounds = true
     }
     

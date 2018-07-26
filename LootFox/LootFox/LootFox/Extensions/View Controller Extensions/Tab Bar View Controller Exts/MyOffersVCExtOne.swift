@@ -52,8 +52,10 @@ extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
 // Returns Cells that have a height of X
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        print ("\(offersTableView.frame.maxY) is the height of the tablView Cell")
+        return offersTableView.frame.midY + 10 
         
-        return  525
+    
     }
     
 

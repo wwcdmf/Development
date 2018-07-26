@@ -29,46 +29,8 @@ class MyOffersVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//
-        //let progressBar = GTProgressBar(frame: self.progressBarView.frame)
-//        let progressBar = GTProgressBar(frame: CGRect(x: 0, y: 0, width: self.progressBarView.frame.width, height: self.progressBarView.frame.height))
-//        
-//        progressBar.progress = 0.75
-//      
-////        progressBar.barBorderColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
-////        progressBar.barFillColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
-////        progressBar.barBackgroundColor = UIColor(red:0.77, green:0.93, blue:0.78, alpha:1.0)
-//        
-//  
-//        //// PURPLE
-//        progressBar.barBorderColor = #colorLiteral(red: 0.5098039216, green: 0.3843137255, blue: 1, alpha: 1)
-//        progressBar.barBackgroundColor = #colorLiteral(red: 0.5098039216, green: 0.3843137255, blue: 1, alpha: 0.6157159675)
-//        progressBar.barFillColor = #colorLiteral(red: 0.5098039216, green: 0.3843137255, blue: 1, alpha: 1)
-//        progressBar.barBorderWidth = 0.0
-//        progressBar.barFillInset = 0.0
-//        
-//        /// WHitE FLIP
-//        
-//        
-//        
-//       // progressBar.labelTextColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
-//        //progressBar.progressLabelInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-//       // progressBar.font = UIFont.boldSystemFont(ofSize: 18)
-//        //progressBar.labelPosition = GTProgressBarLabelPosition.right
-//        progressBar.barMaxHeight = 20
-//        progressBar.displayLabel = false
-//       // progressBar.direction = GTProgressBarDirection.anticlockwise
-//        progressBar.direction = GTProgressBarDirection.clockwise
-//        progressBar.cornerRadius = progressBar.barMaxHeight! / 2
-//       
-//        
-//        progressBarView.addSubview(progressBar)
-//        
-//        
-//        
         
-        //
-        
+        offersTableView.separatorStyle = .none
         offersTableView.delegate = self
         offersTableView.dataSource = self
 
@@ -220,3 +182,41 @@ class MyOffersVC: UIViewController {
 
 
 
+//let progressBar = GTProgressBar(frame: self.progressBarView.frame)
+//        let progressBar = GTProgressBar(frame: CGRect(x: 0, y: 0, width: self.progressBarView.frame.width, height: self.progressBarView.frame.height))
+//
+//        progressBar.progress = 0.75
+//
+////        progressBar.barBorderColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
+////        progressBar.barFillColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
+////        progressBar.barBackgroundColor = UIColor(red:0.77, green:0.93, blue:0.78, alpha:1.0)
+//
+//
+//        //// PURPLE
+//        progressBar.barBorderColor = #colorLiteral(red: 0.5098039216, green: 0.3843137255, blue: 1, alpha: 1)
+//        progressBar.barBackgroundColor = #colorLiteral(red: 0.5098039216, green: 0.3843137255, blue: 1, alpha: 0.6157159675)
+//        progressBar.barFillColor = #colorLiteral(red: 0.5098039216, green: 0.3843137255, blue: 1, alpha: 1)
+//        progressBar.barBorderWidth = 0.0
+//        progressBar.barFillInset = 0.0
+//
+//        /// WHitE FLIP
+//
+//
+//
+//       // progressBar.labelTextColor = UIColor(red:0.35, green:0.80, blue:0.36, alpha:1.0)
+//        //progressBar.progressLabelInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+//       // progressBar.font = UIFont.boldSystemFont(ofSize: 18)
+//        //progressBar.labelPosition = GTProgressBarLabelPosition.right
+//        progressBar.barMaxHeight = 20
+//        progressBar.displayLabel = false
+//       // progressBar.direction = GTProgressBarDirection.anticlockwise
+//        progressBar.direction = GTProgressBarDirection.clockwise
+//        progressBar.cornerRadius = progressBar.barMaxHeight! / 2
+//
+//
+//        progressBarView.addSubview(progressBar)
+//
+//
+//
+
+//
