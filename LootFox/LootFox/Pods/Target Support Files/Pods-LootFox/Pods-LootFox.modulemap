@@ -1,0 +1,6 @@
+framework module Pods_LootFox {
+  umbrella header "Pods-LootFox-umbrella.h"
+
+  export *
+  module * { export * }
+}
