@@ -24,9 +24,9 @@ class CreateUserVC: UIViewController,UINavigationControllerDelegate,UIImagePicke
     @IBOutlet weak var nameTextField: TextFieldView!
     @IBOutlet weak var emailTextField: TextFieldView!
     @IBOutlet weak var passwordTextField: TextFieldView!
-    @IBOutlet weak var warninglbl: UILabel!
-    @IBOutlet weak var successImage: UIImageView!
-    @IBOutlet weak var profileImage: UIImageView!
+    
+
+    //@IBOutlet weak var profileImage: UIImageView!
  
     
     
@@ -48,11 +48,12 @@ class CreateUserVC: UIViewController,UINavigationControllerDelegate,UIImagePicke
         emailTextField.delegate = self
         passwordTextField.delegate = self
         
-        successImage.isHidden = true
-        profileImage.isUserInteractionEnabled = true
+        //successImage.isHidden = true
+        
         contentView.isUserInteractionEnabled = true
         
-        profileImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.handleSelectProfileImageView)))
+        //profileImage.isUserInteractionEnabled = true
+        //profileImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.handleSelectProfileImageView)))
         
         
         
@@ -119,65 +120,65 @@ if emailTextField.text != nil && passwordTextField.text != nil {
         
         //////////////////////
             // Image set in View Controller
-            let uploadImage = self.profileImage.image!.pngData()
+            //let uploadImage = self.profileImage.image!.pngData()
             // let uploadImage = UIImagePNGRepresentation(self.profileImage.image!)
           
             // Upload the file to the path "images/rivers.jpg"
-             storageRefB.putData(uploadImage!, metadata: nil) { (metadata, error) in
-                if metadata != nil  {
-                    print("SUCCESFUL IMAGE UPLOAD")
-        //
-                    storageRefB.downloadURL { (url, error) in
-                        
-                        if url != nil {
-                        let downloadURL = url
-                            
-                        var userDataLoadTwo = Dictionary<String, Any>()
-                            
-                        userDataLoadTwo["profileImageURL"] = "\(downloadURL!)"
-                         
-                            print("IMAGE URL: \(downloadURL!)")
-        DataService.instance.createDBUSER(uid: userUID!, userData: userDataLoadTwo)
-                        
-                            
-                            
-                        } else {
-                            print(String(describing: error?.localizedDescription))
-                            return
-                        }
-                        
-                    }
-                    
-                    //
-                    
-                    //
-                    
-                } else {
-                     print(String(describing: error?.localizedDescription))
-                        return
-                }
-
-
-   
-            }
-            
-        ///////
-           
-            userDataLoadOne["userName"] = self.nameTextField.text
-            userDataLoadOne["profileImageUID"] = randomString
-            
-           // print(userDataLoadOne)
-            
-            
-            
-         
-            DataService.instance.createDBUSER(uid: userUID!, userData: userDataLoadOne)
-                        print("REGISTRATION SUCCESS")
-          //
-            
-            
-            // toggle images
-            self.successImage.isHidden = false
+//             storageRefB.putData(uploadImage!, metadata: nil) { (metadata, error) in
+//                if metadata != nil  {
+//                    print("SUCCESFUL IMAGE UPLOAD")
+//        //
+//                    storageRefB.downloadURL { (url, error) in
+//
+//                        if url != nil {
+//                        let downloadURL = url
+//
+//                        var userDataLoadTwo = Dictionary<String, Any>()
+//
+//                        userDataLoadTwo["profileImageURL"] = "\(downloadURL!)"
+//
+//                            print("IMAGE URL: \(downloadURL!)")
+//        DataService.instance.createDBUSER(uid: userUID!, userData: userDataLoadTwo)
+//
+//
+//
+//                        } else {
+//                            print(String(describing: error?.localizedDescription))
+//                            return
+//                        }
+//
+//                    }
+//
+//                    //
+//
+//                    //
+//
+//                } else {
+//                     print(String(describing: error?.localizedDescription))
+//                        return
+//                }
+//
+//
+//
+//            }
+//
+//        ///////
+//
+//            userDataLoadOne["userName"] = self.nameTextField.text
+//            userDataLoadOne["profileImageUID"] = randomString
+//
+//           // print(userDataLoadOne)
+//
+//
+//
+//
+//            DataService.instance.createDBUSER(uid: userUID!, userData: userDataLoadOne)
+//                        print("REGISTRATION SUCCESS")
+//          //
+//
+//
+//            // toggle images
+//            self.successImage.isHidden = false
             
           //Load
             
@@ -201,8 +202,8 @@ if emailTextField.text != nil && passwordTextField.text != nil {
            self.dismiss(animated: true, completion: nil)
             
         } else {
-            print(String(describing: registrationError?.localizedDescription))
-            self.warninglbl.text = String(describing: registrationError?.localizedDescription)
+//            print(String(describing: registrationError?.localizedDescription))
+//            self.warninglbl.text = String(describing: registrationError?.localizedDescription)
                            }
                     })
             }
