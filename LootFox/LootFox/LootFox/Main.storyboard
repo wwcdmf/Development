@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v8W-Bl-9ZY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v8W-Bl-9ZY">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14278.2"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -324,25 +324,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foL-lJ-LZu" customClass="RoundedUIView" customModule="LootFox" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="147" width="375" height="665"/>
+                                <rect key="frame" x="0.0" y="125" width="375" height="687"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5zb-w8-9jC">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="645"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="687"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lB-nZ-aht">
-                                                <rect key="frame" x="31" y="135" width="375" height="645"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="687"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="go3-H3-qsr">
-                                                        <rect key="frame" x="-32" y="-78" width="375" height="289.66666666666674"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="go3-H3-qsr">
+                                                        <rect key="frame" x="15" y="198.66666666666666" width="345" height="289.66666666666674"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1D-ZJ-JnH">
-                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="39.666666666666664"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="345" height="39.666666666666664"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="EMAIL" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="FLj-2i-CSn" customClass="TextFieldView" customModule="LootFox" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="39.666666666666629" width="375" height="70"/>
+                                                                <rect key="frame" x="0.0" y="39.666666666666629" width="345" height="70"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
@@ -361,7 +361,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="PASSWORD" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="AtG-qx-YYO" customClass="TextFieldView" customModule="LootFox" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="109.66666666666669" width="375" height="70"/>
+                                                                <rect key="frame" x="0.0" y="109.66666666666663" width="345" height="70"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="70" id="WPj-KY-Hhn"/>
@@ -379,7 +379,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="NAME" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="tR2-cr-5pk" customClass="TextFieldView" customModule="LootFox" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="179.66666666666669" width="375" height="70"/>
+                                                                <rect key="frame" x="0.0" y="179.66666666666663" width="345" height="70"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
@@ -398,10 +398,10 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShQ-R7-8u1" customClass="LoginBtnShadowTwo" customModule="LootFox" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="249.66666666666669" width="375" height="40"/>
+                                                                <rect key="frame" x="0.0" y="249.66666666666669" width="345" height="40"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="EMAIL" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="1Kq-QV-W8N" customClass="TextFieldView" customModule="LootFox" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="-15" width="375" height="70"/>
+                                                                        <rect key="frame" x="0.0" y="-15" width="345" height="70"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
@@ -420,7 +420,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </textField>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="PASSWORD" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="vMc-7Y-LLm" customClass="TextFieldView" customModule="LootFox" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="-15" width="375" height="70"/>
+                                                                        <rect key="frame" x="0.0" y="-15" width="345" height="70"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="70" id="I5M-zN-dYr"/>
@@ -438,7 +438,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </textField>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="NAME" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="r9V-pb-0UR" customClass="TextFieldView" customModule="LootFox" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="-15" width="375" height="70"/>
+                                                                        <rect key="frame" x="0.0" y="-15" width="345" height="70"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
@@ -457,10 +457,10 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </textField>
                                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLG-JT-fzr" customClass="LoginBtnShadowTwo" customModule="LootFox" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="40"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FvI-A1-HDo">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="345" height="40"/>
                                                                                 <color key="backgroundColor" red="0.01176470588" green="0.94901960780000005" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                                 <state key="normal">
                                                                                     <attributedString key="attributedTitle">
@@ -492,7 +492,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ovY-gT-rEu">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="40"/>
                                                                         <color key="backgroundColor" red="0.011764705882352941" green="0.94901960784313721" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <state key="normal">
                                                                             <attributedString key="attributedTitle">
@@ -540,52 +540,64 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="go3-H3-qsr" firstAttribute="centerX" secondItem="3lB-nZ-aht" secondAttribute="centerX" id="OyW-4A-dCn"/>
-                                                    <constraint firstItem="go3-H3-qsr" firstAttribute="centerY" secondItem="3lB-nZ-aht" secondAttribute="centerY" id="cwU-DD-t7u"/>
-                                                    <constraint firstItem="go3-H3-qsr" firstAttribute="centerX" secondItem="3lB-nZ-aht" secondAttribute="centerX" id="qdI-mw-Q0s"/>
-                                                    <constraint firstItem="go3-H3-qsr" firstAttribute="centerY" secondItem="3lB-nZ-aht" secondAttribute="centerY" id="u7i-SO-x82"/>
+                                                    <constraint firstItem="go3-H3-qsr" firstAttribute="leading" secondItem="3lB-nZ-aht" secondAttribute="leading" constant="15" id="5nI-2R-1Sy"/>
+                                                    <constraint firstItem="go3-H3-qsr" firstAttribute="centerY" secondItem="3lB-nZ-aht" secondAttribute="centerY" id="7RQ-bc-2OP"/>
+                                                    <constraint firstItem="go3-H3-qsr" firstAttribute="centerX" secondItem="3lB-nZ-aht" secondAttribute="centerX" id="PJ7-NN-Olf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="go3-H3-qsr" secondAttribute="trailing" constant="15" id="Tbj-fw-YJd"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="3lB-nZ-aht" secondAttribute="trailing" constant="28" id="6Tz-2R-xp1"/>
-                                            <constraint firstItem="3lB-nZ-aht" firstAttribute="height" secondItem="5zb-w8-9jC" secondAttribute="height" id="QLY-5B-d9y"/>
-                                            <constraint firstItem="3lB-nZ-aht" firstAttribute="width" secondItem="5zb-w8-9jC" secondAttribute="width" id="aYB-Fu-Wee"/>
-                                            <constraint firstItem="3lB-nZ-aht" firstAttribute="top" secondItem="5zb-w8-9jC" secondAttribute="top" constant="135" id="rMm-QT-cbj"/>
-                                            <constraint firstItem="3lB-nZ-aht" firstAttribute="leading" secondItem="5zb-w8-9jC" secondAttribute="leading" constant="31" id="u7i-it-jRr"/>
-                                            <constraint firstAttribute="bottom" secondItem="3lB-nZ-aht" secondAttribute="bottom" constant="145" id="yDI-s8-Tbd"/>
+                                            <constraint firstAttribute="bottom" secondItem="3lB-nZ-aht" secondAttribute="bottom" id="0gc-c5-cxE"/>
+                                            <constraint firstItem="3lB-nZ-aht" firstAttribute="leading" secondItem="5zb-w8-9jC" secondAttribute="leading" id="Ash-cW-Vdy"/>
+                                            <constraint firstItem="3lB-nZ-aht" firstAttribute="height" secondItem="5zb-w8-9jC" secondAttribute="height" id="ONj-ab-waX"/>
+                                            <constraint firstAttribute="trailing" secondItem="3lB-nZ-aht" secondAttribute="trailing" id="RFw-9e-C65"/>
+                                            <constraint firstItem="3lB-nZ-aht" firstAttribute="top" secondItem="5zb-w8-9jC" secondAttribute="top" id="hhl-PD-vBb"/>
+                                            <constraint firstItem="3lB-nZ-aht" firstAttribute="width" secondItem="5zb-w8-9jC" secondAttribute="width" id="jGC-cf-Erg"/>
                                         </constraints>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5zb-w8-9jC" secondAttribute="trailing" id="4FO-6D-fLl"/>
+                                    <constraint firstAttribute="bottom" secondItem="5zb-w8-9jC" secondAttribute="bottom" id="746-8Z-Qmq"/>
                                     <constraint firstItem="5zb-w8-9jC" firstAttribute="leading" secondItem="foL-lJ-LZu" secondAttribute="leading" id="F36-lh-eQC"/>
-                                    <constraint firstItem="5zb-w8-9jC" firstAttribute="top" secondItem="foL-lJ-LZu" secondAttribute="top" id="axo-s8-JLR"/>
-                                    <constraint firstAttribute="bottom" secondItem="5zb-w8-9jC" secondAttribute="bottom" constant="20" symbolic="YES" id="cXW-PU-oiC"/>
-                                    <constraint firstAttribute="trailing" secondItem="5zb-w8-9jC" secondAttribute="trailing" id="caX-7P-i1r"/>
+                                    <constraint firstItem="5zb-w8-9jC" firstAttribute="top" secondItem="foL-lJ-LZu" secondAttribute="top" id="Lc2-uG-Rad"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ve-24-4Wf">
-                                <rect key="frame" x="20" y="74" width="30" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tCT-cv-YuD" customClass="NavigationBar" customModule="LootFox" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ve-24-4Wf">
+                                        <rect key="frame" x="15" y="90" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="FKw-rJ-GzN"/>
+                                            <constraint firstAttribute="height" constant="30" id="eUn-7i-2GW"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="30" id="q3y-Lh-k6B"/>
+                                        </constraints>
+                                        <state key="normal" image="backBtn"/>
+                                        <connections>
+                                            <action selector="backBtnPressedNUVC:" destination="cW3-qn-IUp" eventType="touchUpInside" id="lGW-EK-ohq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="FKw-rJ-GzN"/>
-                                    <constraint firstAttribute="height" constant="30" id="eUn-7i-2GW"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="30" id="q3y-Lh-k6B"/>
+                                    <constraint firstItem="5Ve-24-4Wf" firstAttribute="leading" secondItem="tCT-cv-YuD" secondAttribute="leading" constant="15" id="VGd-2o-fhy"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Ve-24-4Wf" secondAttribute="bottom" constant="5" id="Yov-Oi-2qc"/>
+                                    <constraint firstAttribute="height" constant="125" id="qhy-WZ-OHx"/>
                                 </constraints>
-                                <state key="normal" image="backBtn"/>
-                                <connections>
-                                    <action selector="backBtnPressedNUVC:" destination="cW3-qn-IUp" eventType="touchUpInside" id="lGW-EK-ohq"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="foL-lJ-LZu" firstAttribute="leading" secondItem="tvL-Mo-EiW" secondAttribute="leading" id="6Vp-IU-8oA"/>
-                            <constraint firstAttribute="bottom" secondItem="foL-lJ-LZu" secondAttribute="bottom" id="KSr-SO-tbZ"/>
                             <constraint firstAttribute="trailing" secondItem="foL-lJ-LZu" secondAttribute="trailing" id="Kif-q9-hx6"/>
-                            <constraint firstItem="5Ve-24-4Wf" firstAttribute="leading" secondItem="B4e-0L-4mO" secondAttribute="leading" constant="20" id="MZ5-bL-5GW"/>
-                            <constraint firstItem="5Ve-24-4Wf" firstAttribute="top" secondItem="B4e-0L-4mO" secondAttribute="top" constant="30" id="Xr4-7I-yor"/>
-                            <constraint firstItem="foL-lJ-LZu" firstAttribute="top" secondItem="5Ve-24-4Wf" secondAttribute="bottom" constant="43" id="vhH-Rx-UF2"/>
+                            <constraint firstItem="foL-lJ-LZu" firstAttribute="top" secondItem="tCT-cv-YuD" secondAttribute="bottom" id="ToP-m2-sao"/>
+                            <constraint firstItem="tCT-cv-YuD" firstAttribute="trailing" secondItem="B4e-0L-4mO" secondAttribute="trailing" id="jXG-C1-O0B"/>
+                            <constraint firstItem="tCT-cv-YuD" firstAttribute="leading" secondItem="B4e-0L-4mO" secondAttribute="leading" id="r0w-8G-Lid"/>
+                            <constraint firstAttribute="bottom" secondItem="foL-lJ-LZu" secondAttribute="bottom" id="sXv-hC-kJq"/>
+                            <constraint firstItem="tCT-cv-YuD" firstAttribute="top" secondItem="tvL-Mo-EiW" secondAttribute="top" id="xBw-re-lJm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B4e-0L-4mO"/>
                     </view>
@@ -1245,7 +1257,7 @@
                                                                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offers Designed by you. For You." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUg-1O-6MJ">
-                                                                                <rect key="frame" x="20" y="118.33333333333337" width="160" height="188.00000000000003"/>
+                                                                                <rect key="frame" x="20" y="118.33333333333334" width="160" height="188.00000000000003"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="188" id="nWg-h4-K2f"/>
                                                                                     <constraint firstAttribute="width" constant="160" id="pwA-Es-iYv"/>
@@ -2625,7 +2637,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Entrance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUJ-TA-t66">
-                                                                            <rect key="frame" x="70" y="-1.3333333333333339" width="111" height="20.333333333333336"/>
+                                                                            <rect key="frame" x="70" y="-1.3333333333333339" width="111" height="19.666666666666671"/>
                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -2637,7 +2649,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LwT-qz-CQE" customClass="roundedButton" customModule="LootFox" customModuleProvider="target">
-                                                                            <rect key="frame" x="460" y="7" width="75" height="30"/>
+                                                                            <rect key="frame" x="235" y="7" width="75" height="30"/>
                                                                             <color key="backgroundColor" red="0.50980392159999999" green="0.38431372549999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="75" id="26l-0q-JbL"/>
@@ -2878,13 +2890,13 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCK-Ij-1D2" customClass="ShadedUIView" customModule="LootFox" customModuleProvider="target">
-                                                            <rect key="frame" x="15" y="15" width="570" height="570"/>
+                                                            <rect key="frame" x="15" y="15" width="345" height="345"/>
                                                             <subviews>
                                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="joa-Rk-OGT" customClass="LocatonAdvertView" customModule="LootFox" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="570" height="570"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="345"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W1c-lO-LYH">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="570" height="570"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="345"/>
                                                                         </imageView>
                                                                     </subviews>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

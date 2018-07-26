@@ -44,7 +44,7 @@ extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
         
         
         
-        
+        cell.imageView?.frame.size.height
         return cell
         
     }
@@ -57,6 +57,8 @@ extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
         let difference = (offersTableView.frame.maxY + offersTableView.frame.midY) / 2
         
   print("\(difference) is the height of the tablView Cell")
+        
+        
         return difference
         
     

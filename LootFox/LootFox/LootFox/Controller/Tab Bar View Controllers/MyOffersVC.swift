@@ -19,7 +19,7 @@ class MyOffersVC: UIViewController {
     //DataToPass
     
     var selectedDataArray = [Any?]()
-
+    var contentViewHeight: CGFloat?
  
     //
     
