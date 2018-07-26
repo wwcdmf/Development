@@ -52,8 +52,12 @@ extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
 // Returns Cells that have a height of X
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        print ("\(offersTableView.frame.maxY) is the height of the tablView Cell")
-        return offersTableView.frame.midY + 10 
+      
+        
+        let difference = (offersTableView.frame.maxY + offersTableView.frame.midY) / 2
+        
+  print("\(difference) is the height of the tablView Cell")
+        return difference
         
     
     }
@@ -75,7 +79,7 @@ extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
         let currentCell = offersTableView.cellForRow(at: indexPathValue as IndexPath) as! OfferCell
         print("Current Cell:) \(currentCell)")
         
-        print("Prior to sendSelectedData is setup: \(currentCell.companyName.text ?? "default Value")")
+//        print("Prior to sendSelectedData is setup: \(currentCell.companyName.text ?? "default Value")")
         
         
         //Storing the data to a string from the selected cell

@@ -14,9 +14,10 @@ class CustomTabBar: UITabBar {
     override func awakeFromNib() {
        
 
-        self.barTintColor = #colorLiteral(red: 0.3025259674, green: 0.07894495875, blue: 0.4087719917, alpha: 1)
-        self.unselectedItemTintColor = UIColor.white
-        
+        self.barTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        self.unselectedItemTintColor =  #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)   //UIColor.black
+        self.layer.borderColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        self.layer.borderWidth = 0.7
         self.sizeThatFits(CGSize(width: 15, height: 15))
         self.backgroundImage = UIImage()
         self.shadowImage = UIImage()

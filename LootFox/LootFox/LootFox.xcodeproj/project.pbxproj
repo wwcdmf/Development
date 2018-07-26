@@ -56,7 +56,7 @@
 		F7C25A0020E9AC980033AC29 /* StaggeredLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C259FF20E9AC980033AC29 /* StaggeredLayout.swift */; };
 		F7C46391210457BF003B5B71 /* ManagementWeeklyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C46390210457BF003B5B71 /* ManagementWeeklyVC.swift */; };
 		F7C7CE6A20F2776200B537AB /* CreateUser_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C7CE6920F2776200B537AB /* CreateUser_2.swift */; };
-		F7CEC34620FACCF900B7F195 /* UITabeBarLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CEC34520FACCF900B7F195 /* UITabeBarLibrary.swift */; };
+		F7CEC34620FACCF900B7F195 /* UITabBarLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CEC34520FACCF900B7F195 /* UITabBarLibrary.swift */; };
 		F7DFFA9C20FE53A00041F11F /* MyOffersVCExtOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFFA9B20FE53A00041F11F /* MyOffersVCExtOne.swift */; };
 /* End PBXBuildFile section */
 
@@ -119,7 +119,7 @@
 		F7C259FF20E9AC980033AC29 /* StaggeredLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredLayout.swift; sourceTree = "<group>"; };
 		F7C46390210457BF003B5B71 /* ManagementWeeklyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementWeeklyVC.swift; sourceTree = "<group>"; };
 		F7C7CE6920F2776200B537AB /* CreateUser_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUser_2.swift; sourceTree = "<group>"; };
-		F7CEC34520FACCF900B7F195 /* UITabeBarLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabeBarLibrary.swift; sourceTree = "<group>"; };
+		F7CEC34520FACCF900B7F195 /* UITabBarLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarLibrary.swift; sourceTree = "<group>"; };
 		F7DFFA9B20FE53A00041F11F /* MyOffersVCExtOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOffersVCExtOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -339,7 +339,7 @@
 		F79DB5EF2105914400559653 /* UI Objects */ = {
 			isa = PBXGroup;
 			children = (
-				F7CEC34520FACCF900B7F195 /* UITabeBarLibrary.swift */,
+				F7CEC34520FACCF900B7F195 /* UITabBarLibrary.swift */,
 				F79DB5ED2105901500559653 /* UIViewLibrary.swift */,
 				F781A20E20E33579007FD781 /* UIImageViewLibrary.swift */,
 				F781A20D20E33579007FD781 /* UITextFieldLibrary.swift */,
@@ -534,7 +534,7 @@
 				F704E8B821053DE5003B6F38 /* Announcements.swift in Sources */,
 				F708ECC621064AA5009B7952 /* ManagementLocationOffers_1.swift in Sources */,
 				F781A1F320E3350E007FD781 /* CreateUser_1.swift in Sources */,
-				F7CEC34620FACCF900B7F195 /* UITabeBarLibrary.swift in Sources */,
+				F7CEC34620FACCF900B7F195 /* UITabBarLibrary.swift in Sources */,
 				F7C259F420E971820033AC29 /* AnimatedGradient.swift in Sources */,
 				F781A20120E33546007FD781 /* CreateUserVC.swift in Sources */,
 				F7282E602103C8D40067CC0F /* ManagementAnnouncmentsVC.swift in Sources */,
