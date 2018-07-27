@@ -45,6 +45,7 @@
 		F781A22820E3357A007FD781 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F781A21A20E3357A007FD781 /* AuthService.swift */; };
 		F781A22A20E335E9007FD781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F781A22920E335E9007FD781 /* Main.storyboard */; };
 		F781A22F20E33895007FD781 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F781A22E20E33895007FD781 /* GoogleService-Info.plist */; };
+		F793F29A210A917800FB48C0 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F793F299210A917800FB48C0 /* UIViewExt.swift */; };
 		F798303E20F5AF44006EB7EB /* MyOffersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F798303D20F5AF44006EB7EB /* MyOffersVC.swift */; };
 		F798304020F5B03D006EB7EB /* OfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F798303F20F5B03D006EB7EB /* OfferCell.swift */; };
 		F79DB5EE2105901500559653 /* UIViewLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79DB5ED2105901500559653 /* UIViewLibrary.swift */; };
@@ -108,6 +109,7 @@
 		F781A21A20E3357A007FD781 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F781A22920E335E9007FD781 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F781A22E20E33895007FD781 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F793F299210A917800FB48C0 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		F798303D20F5AF44006EB7EB /* MyOffersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOffersVC.swift; sourceTree = "<group>"; };
 		F798303F20F5B03D006EB7EB /* OfferCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCell.swift; sourceTree = "<group>"; };
 		F79DB5ED2105901500559653 /* UIViewLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewLibrary.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				F708ECC121063465009B7952 /* UIImageExt.swift */,
+				F793F299210A917800FB48C0 /* UIViewExt.swift */,
 			);
 			path = "Class Extensions";
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				F781A20220E33546007FD781 /* LoginVC.swift in Sources */,
 				F781A21E20E3357A007FD781 /* UIImageViewLibrary.swift in Sources */,
 				F781A22120E3357A007FD781 /* LManagerCell.swift in Sources */,
+				F793F29A210A917800FB48C0 /* UIViewExt.swift in Sources */,
 				F7C7CE6A20F2776200B537AB /* CreateUser_2.swift in Sources */,
 				F781A1F420E3350E007FD781 /* ParticleEmitter.swift in Sources */,
 				F7C25A0020E9AC980033AC29 /* StaggeredLayout.swift in Sources */,

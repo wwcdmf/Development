@@ -16,27 +16,29 @@ class DiscoverVC: UIViewController
 
     @IBOutlet var trueView: UIView!
     @IBOutlet var particleView: UIView!
-
-
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isTranslucent = false
+        
+//        let contentheight = Ratio_1_1_View.frame.height
+//        var Ratio_1_1 = self.Ratio_1_1_View.frame.height
+//
+//        print("\(Ratio_1_1)")
            // self.displayView.isHidden = true
-        createParticles()
+       // createParticles()
         
         ////
-        let pastelView = PastelView(frame: trueView.bounds)
-        pastelView.startPastelPoint = .bottomLeft
-        pastelView.endPastelPoint = .topRight
-        
-        pastelView.animationDuration = 3.0
-        
-        pastelView.setPastelGradient(CustomGradient.trueSunset)
-        
-        pastelView.startAnimation()
-        trueView.insertSubview(pastelView, at: 0)
+//        let pastelView = PastelView(frame: trueView.bounds)
+//        pastelView.startPastelPoint = .bottomLeft
+//        pastelView.endPastelPoint = .topRight
+//
+//        pastelView.animationDuration = 3.0
+//
+//        pastelView.setPastelGradient(CustomGradient.trueSunset)
+//
+//        pastelView.startAnimation()
+//        trueView.insertSubview(pastelView, at: 0)
         ////
     }
 
@@ -47,6 +49,9 @@ class DiscoverVC: UIViewController
     func pushTo(viewController: UIViewController) {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    
+ 
     
     @IBAction func actShowMenu(_ sender: Any) {
 
