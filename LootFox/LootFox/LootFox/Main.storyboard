@@ -304,7 +304,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="0.98999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.89439244923857864" green="0.89439244923857864" blue="0.89439244923857864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
@@ -2615,7 +2615,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Entrance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUJ-TA-t66">
-                                                                            <rect key="frame" x="70" y="-1.3333333333333339" width="111" height="20"/>
+                                                                            <rect key="frame" x="70" y="-1.3333333333333339" width="111" height="20.333333333333336"/>
                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -2832,24 +2832,24 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Offers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHZ-aM-K2d">
-                                        <rect key="frame" x="15" y="49" width="144" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <rect key="frame" x="139" y="61" width="97" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="ea8-Ps-EBf" customClass="RoundColoredProfileImage" customModule="LootFox" customModuleProvider="target">
-                                        <rect key="frame" x="325" y="49.666666666666657" width="35" height="35"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="ea8-Ps-EBf" customClass="ProfileImageVew" customModule="LootFox" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="55.666666666666657" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="ftD-hi-uj4"/>
                                             <constraint firstAttribute="width" constant="35" id="xOP-Wt-MXp"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.94075190355329952" green="0.94075190355329952" blue="0.94075190355329952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="ea8-Ps-EBf" firstAttribute="centerY" secondItem="gHZ-aM-K2d" secondAttribute="centerY" id="6Vm-G9-me8"/>
-                                    <constraint firstAttribute="trailing" secondItem="ea8-Ps-EBf" secondAttribute="trailing" constant="15" id="8QT-sx-4Mq"/>
-                                    <constraint firstItem="gHZ-aM-K2d" firstAttribute="leading" secondItem="POo-G1-BZW" secondAttribute="leading" constant="15" id="Eip-LT-te0"/>
+                                    <constraint firstItem="ea8-Ps-EBf" firstAttribute="leading" secondItem="POo-G1-BZW" secondAttribute="leading" constant="15" id="8hU-6h-YDl"/>
                                     <constraint firstAttribute="height" constant="100" id="MeV-re-Ti5"/>
+                                    <constraint firstItem="gHZ-aM-K2d" firstAttribute="centerX" secondItem="POo-G1-BZW" secondAttribute="centerX" id="gXI-5x-wnZ"/>
                                     <constraint firstAttribute="bottom" secondItem="gHZ-aM-K2d" secondAttribute="bottom" constant="15" id="zUY-Hy-5TV"/>
                                 </constraints>
                             </view>
@@ -2860,21 +2860,21 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="712"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OfferCell" rowHeight="470" id="z7x-0U-ZSq" customClass="OfferCell" customModule="LootFox" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="5" width="375" height="470"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OfferCell" rowHeight="557" id="z7x-0U-ZSq" customClass="OfferCell" customModule="LootFox" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="5" width="375" height="557"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z7x-0U-ZSq" id="YIf-nN-eVG">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="469.66666666666669"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="556.66666666666663"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCK-Ij-1D2" customClass="ShadedUIView" customModule="LootFox" customModuleProvider="target">
-                                                            <rect key="frame" x="15" y="15" width="345" height="460"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                                                             <subviews>
                                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="joa-Rk-OGT" customClass="RoundedUIView" customModule="LootFox" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="460"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W1c-lO-LYH">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="460"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" secondItem="W1c-lO-LYH" secondAttribute="height" multiplier="3:4" id="RiW-gS-czi"/>
                                                                             </constraints>
@@ -2899,9 +2899,9 @@
                                                         </view>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="SCK-Ij-1D2" firstAttribute="top" secondItem="YIf-nN-eVG" secondAttribute="top" constant="15" id="7uq-U5-g92"/>
-                                                        <constraint firstItem="SCK-Ij-1D2" firstAttribute="leading" secondItem="YIf-nN-eVG" secondAttribute="leading" constant="15" id="M7f-5Q-U0Z"/>
-                                                        <constraint firstAttribute="trailing" secondItem="SCK-Ij-1D2" secondAttribute="trailing" constant="15" id="PUs-Xs-mZc"/>
+                                                        <constraint firstAttribute="trailing" secondItem="SCK-Ij-1D2" secondAttribute="trailing" id="33x-2v-DjT"/>
+                                                        <constraint firstItem="SCK-Ij-1D2" firstAttribute="leading" secondItem="YIf-nN-eVG" secondAttribute="leading" id="bkV-OC-XkY"/>
+                                                        <constraint firstItem="SCK-Ij-1D2" firstAttribute="top" secondItem="YIf-nN-eVG" secondAttribute="top" id="h5h-WE-JGH"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>

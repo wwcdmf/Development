@@ -58,7 +58,7 @@ extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
         
         print("\((trueView.frame.width) * 1.33) : Height of Content")
         
-        return (trueView.frame.width) * 1.33
+        return (trueView.frame.width) * 1.4
         
     
     }
