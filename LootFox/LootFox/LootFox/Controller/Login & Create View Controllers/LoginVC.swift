@@ -50,6 +50,8 @@ class LoginVC: UIViewController {
 //        pastelView.startAnimation()
 //        loginGradientView.insertSubview(pastelView, at: 0)
 //        ////
+        
+       
         // Do any additional setup after loading the view.
     }
     

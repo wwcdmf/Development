@@ -19,8 +19,19 @@ class TextFieldView: UITextField {
 override func awakeFromNib() {
     
     // Place Holder ( Choose Color)
-    let placeholder = NSAttributedString(string: self.placeholder!, attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)])
+    let placeholder = NSAttributedString(string: self.placeholder!, attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)])
     self.attributedPlaceholder = placeholder
+    
+    let border = CALayer()
+    let width = CGFloat(1.0)
+    
+    border.borderColor = UIColor.lightGray.cgColor
+    
+    border.frame = CGRect(x: 0, y: self.frame.size.height - width, width:  self.frame.size.width, height: self.frame.size.height)
+    border.borderWidth = width
+    self.layer.addSublayer(border)
+    self.layer.masksToBounds = true
+    
     /// UITextField (Border Appearance)
 //    let border = CALayer()
 //    let width = CGFloat(5.0)
