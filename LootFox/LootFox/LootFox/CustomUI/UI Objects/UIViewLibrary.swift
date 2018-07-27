@@ -350,3 +350,27 @@ class RoundedUIView: UIView {
 }
 
 
+
+class BorderBottom: UIView {
+    
+    
+    override func awakeFromNib() {
+        
+        
+        let border = CALayer()
+        let width = CGFloat(0.7)
+        border.borderColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        
+        //self.layer.cornerRadius = 10.0
+        //
+        border.frame = CGRect(x: 0, y: self.frame.size.height - width, width:  self.frame.size.width, height: self.frame.size.height)
+        border.borderWidth = width
+        
+        //self.layer.cornerRadius = 10.0
+        self.layer.addSublayer(border)
+        self.layer.masksToBounds = true
+        
+    }
+}
+
+

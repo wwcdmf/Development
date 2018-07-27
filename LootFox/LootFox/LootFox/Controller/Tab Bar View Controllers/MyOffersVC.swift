@@ -26,13 +26,22 @@ class MyOffersVC: UIViewController {
  
    //Data Loaded Toggle Variables. When to Load
     var dataLoaded = false
+   //
+    
+   
+
+    //
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+     
+        
         offersTableView.separatorStyle = .none
         offersTableView.delegate = self
         offersTableView.dataSource = self
+       
 
           self.offersTableView.reloadData()
         ////
@@ -51,11 +60,8 @@ class MyOffersVC: UIViewController {
         profileImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.ProfileSegue)))
     
         //
-       
+     
     }
-
-
-
 
 
     

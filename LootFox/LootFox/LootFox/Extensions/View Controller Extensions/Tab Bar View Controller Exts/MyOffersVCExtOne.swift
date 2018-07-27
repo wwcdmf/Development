@@ -13,7 +13,7 @@ import UIKit
 
 extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
   
-
+   
     
 // Return of of Sections in the Given Table View
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -44,7 +44,7 @@ extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
         
         
         
-        cell.imageView?.frame.size.height
+       
         return cell
         
     }
@@ -53,13 +53,12 @@ extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
       
+       
+    
         
-        let difference = (offersTableView.frame.maxY + offersTableView.frame.midY) / 2
+        print("\((trueView.frame.width) * 1.33) : Height of Content")
         
-  print("\(difference) is the height of the tablView Cell")
-        
-        
-        return difference
+        return (trueView.frame.width) * 1.33
         
     
     }

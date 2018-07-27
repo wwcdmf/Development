@@ -56,3 +56,20 @@ class IconImageView: UIImageView {
 }
 
 
+
+class RoundColoredProfileImage: UIImageView {
+    
+    
+    
+    override func awakeFromNib() {
+        
+        self.layer.borderWidth = 1.0
+        self.layer.borderColor = #colorLiteral(red: 0.01176470588, green: 0.9490196078, blue: 0.6431372549, alpha: 1)
+        self.layer.cornerRadius = frame.height/2
+//        let opacity:CGFloat = 1.0
+//        let borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+//        self.layer.borderColor = borderColor.withAlphaComponent(opacity).cgColor
+        
+    }
+    
+}

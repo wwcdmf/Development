@@ -131,14 +131,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3DA-an-bnD">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Vdf-uG-hHj">
-                                                        <rect key="frame" x="15" y="167.66666666666666" width="345" height="264.66666666666674"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vdf-uG-hHj">
+                                                        <rect key="frame" x="0.0" y="99.999999999999986" width="375" height="239.66666666666663"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="EMAIL" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="NoR-US-xXK" customClass="TextFieldView" customModule="LootFox" customModuleProvider="target">
-                                                                <rect key="frame" x="5" y="0.0" width="335" height="40"/>
+                                                                <rect key="frame" x="5" y="0.0" width="365" height="70"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="40" id="9l3-Yh-gmS"/>
+                                                                    <constraint firstAttribute="height" constant="70" id="9l3-Yh-gmS"/>
                                                                 </constraints>
                                                                 <attributedString key="attributedText"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -153,10 +153,10 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="PASSWORD" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="q11-A4-qoj" customClass="TextFieldView" customModule="LootFox" customModuleProvider="target">
-                                                                <rect key="frame" x="5" y="80" width="335" height="40"/>
+                                                                <rect key="frame" x="5" y="75" width="365" height="70"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="40" id="nzn-Fb-gil"/>
+                                                                    <constraint firstAttribute="height" constant="70" id="nzn-Fb-gil"/>
                                                                 </constraints>
                                                                 <attributedString key="attributedText"/>
                                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -171,10 +171,10 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3j7-6H-JfJ" customClass="LoginBtnShadowTwo" customModule="LootFox" customModuleProvider="target">
-                                                                <rect key="frame" x="5" y="160" width="335" height="40"/>
+                                                                <rect key="frame" x="5" y="150" width="365" height="60"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tbh-u7-2fY">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="365" height="60"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal">
                                                                             <attributedString key="attributedTitle">
@@ -196,13 +196,13 @@
                                                                 <constraints>
                                                                     <constraint firstItem="tbh-u7-2fY" firstAttribute="leading" secondItem="3j7-6H-JfJ" secondAttribute="leading" id="4DT-86-ySB"/>
                                                                     <constraint firstAttribute="trailing" secondItem="tbh-u7-2fY" secondAttribute="trailing" id="4j4-lx-heQ"/>
-                                                                    <constraint firstAttribute="height" constant="40" id="G0q-V9-6Qx"/>
+                                                                    <constraint firstAttribute="height" constant="60" id="G0q-V9-6Qx"/>
                                                                     <constraint firstAttribute="bottom" secondItem="tbh-u7-2fY" secondAttribute="bottom" id="Zfz-MW-1ke"/>
                                                                     <constraint firstItem="tbh-u7-2fY" firstAttribute="top" secondItem="3j7-6H-JfJ" secondAttribute="top" id="mSL-RL-tcL"/>
                                                                 </constraints>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="hz3-AB-PD1">
-                                                                <rect key="frame" x="87.666666666666686" y="239.99999999999994" width="170" height="24.666666666666686"/>
+                                                                <rect key="frame" x="102.66666666666669" y="215" width="170" height="24.666666666666657"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJ2-KL-7O6">
                                                                         <rect key="frame" x="0.0" y="0.0" width="126" height="24.666666666666668"/>
@@ -236,6 +236,7 @@
                                                             </stackView>
                                                         </subviews>
                                                         <constraints>
+                                                            <constraint firstItem="hz3-AB-PD1" firstAttribute="top" secondItem="3j7-6H-JfJ" secondAttribute="bottom" constant="5" id="106-v6-AET"/>
                                                             <constraint firstItem="q11-A4-qoj" firstAttribute="width" secondItem="NoR-US-xXK" secondAttribute="width" id="46I-yP-nlF"/>
                                                             <constraint firstAttribute="trailing" secondItem="NoR-US-xXK" secondAttribute="trailing" constant="5" id="ChG-lf-fp4"/>
                                                             <constraint firstItem="NoR-US-xXK" firstAttribute="leading" secondItem="Vdf-uG-hHj" secondAttribute="leading" constant="5" id="GCK-yU-A5v"/>
@@ -246,10 +247,9 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="Vdf-uG-hHj" firstAttribute="centerY" secondItem="3DA-an-bnD" secondAttribute="centerY" id="2na-rz-ffB"/>
-                                                    <constraint firstItem="Vdf-uG-hHj" firstAttribute="centerX" secondItem="3DA-an-bnD" secondAttribute="centerX" id="URt-vw-7tf"/>
-                                                    <constraint firstItem="Vdf-uG-hHj" firstAttribute="leading" secondItem="3DA-an-bnD" secondAttribute="leading" constant="15" id="d4Y-Jl-P2O"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Vdf-uG-hHj" secondAttribute="trailing" constant="15" id="mdX-xZ-zO8"/>
+                                                    <constraint firstItem="Vdf-uG-hHj" firstAttribute="top" secondItem="3DA-an-bnD" secondAttribute="top" constant="100" id="4sq-Vq-afX"/>
+                                                    <constraint firstItem="Vdf-uG-hHj" firstAttribute="leading" secondItem="3DA-an-bnD" secondAttribute="leading" id="d4Y-Jl-P2O"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Vdf-uG-hHj" secondAttribute="trailing" id="mdX-xZ-zO8"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -334,40 +334,21 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lB-nZ-aht">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="687"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="go3-H3-qsr">
-                                                        <rect key="frame" x="15" y="163.66666666666666" width="345" height="359.66666666666674"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="go3-H3-qsr">
+                                                        <rect key="frame" x="15" y="198.66666666666666" width="345" height="289.66666666666674"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1D-ZJ-JnH">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1D-ZJ-JnH">
                                                                 <rect key="frame" x="0.0" y="0.0" width="345" height="39.666666666666664"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="NAME" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="tR2-cr-5pk" customClass="TextFieldView" customModule="LootFox" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="79.666666666666629" width="345" height="40"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="40" id="c3r-3X-fxr"/>
-                                                                </constraints>
-                                                                <attributedString key="attributedText"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="user"/>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                                                        <real key="value" value="2"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="EMAIL" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="FLj-2i-CSn" customClass="TextFieldView" customModule="LootFox" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="159.66666666666663" width="345" height="40"/>
+                                                                <rect key="frame" x="0.0" y="39.666666666666629" width="345" height="70"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="40" id="Yba-nJ-p9y"/>
+                                                                    <constraint firstAttribute="height" constant="70" id="Yba-nJ-p9y"/>
                                                                 </constraints>
                                                                 <attributedString key="attributedText"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -382,10 +363,10 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="PASSWORD" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="AtG-qx-YYO" customClass="TextFieldView" customModule="LootFox" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="239.66666666666669" width="345" height="40"/>
+                                                                <rect key="frame" x="0.0" y="109.66666666666663" width="345" height="70"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="40" id="WPj-KY-Hhn"/>
+                                                                    <constraint firstAttribute="height" constant="70" id="WPj-KY-Hhn"/>
                                                                 </constraints>
                                                                 <attributedString key="attributedText"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -399,8 +380,27 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="NAME" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="tR2-cr-5pk" customClass="TextFieldView" customModule="LootFox" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="179.66666666666663" width="345" height="70"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="70" id="c3r-3X-fxr"/>
+                                                                </constraints>
+                                                                <attributedString key="attributedText"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="user"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                        <real key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShQ-R7-8u1" customClass="LoginBtnShadowTwo" customModule="LootFox" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="319.66666666666669" width="345" height="40"/>
+                                                                <rect key="frame" x="0.0" y="249.66666666666669" width="345" height="40"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="EMAIL" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="1Kq-QV-W8N" customClass="TextFieldView" customModule="LootFox" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="-15" width="345" height="70"/>
@@ -552,7 +552,7 @@
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="3lB-nZ-aht" secondAttribute="bottom" id="0gc-c5-cxE"/>
                                             <constraint firstItem="3lB-nZ-aht" firstAttribute="leading" secondItem="5zb-w8-9jC" secondAttribute="leading" id="Ash-cW-Vdy"/>
-                                            <constraint firstItem="3lB-nZ-aht" firstAttribute="height" secondItem="5zb-w8-9jC" secondAttribute="height" priority="250" id="ONj-ab-waX"/>
+                                            <constraint firstItem="3lB-nZ-aht" firstAttribute="height" secondItem="5zb-w8-9jC" secondAttribute="height" id="ONj-ab-waX"/>
                                             <constraint firstAttribute="trailing" secondItem="3lB-nZ-aht" secondAttribute="trailing" id="RFw-9e-C65"/>
                                             <constraint firstItem="3lB-nZ-aht" firstAttribute="top" secondItem="5zb-w8-9jC" secondAttribute="top" id="hhl-PD-vBb"/>
                                             <constraint firstItem="3lB-nZ-aht" firstAttribute="width" secondItem="5zb-w8-9jC" secondAttribute="width" id="jGC-cf-Erg"/>
@@ -606,11 +606,9 @@
                     <connections>
                         <outlet property="contentView" destination="3lB-nZ-aht" id="U9E-Wl-Xp5"/>
                         <outlet property="continueBtnPressed" destination="ovY-gT-rEu" id="qcB-VL-2XK"/>
-                        <outlet property="createUserViewBottomConstraint" destination="ONj-ab-waX" id="hef-3f-PkK"/>
                         <outlet property="emailTextField" destination="FLj-2i-CSn" id="QdH-pH-8Be"/>
                         <outlet property="nameTextField" destination="tR2-cr-5pk" id="oVD-qb-LHi"/>
                         <outlet property="passwordTextField" destination="AtG-qx-YYO" id="21S-xf-7Hd"/>
-                        <outlet property="scrollView" destination="5zb-w8-9jC" id="BR7-MH-TQq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ay-Gq-YaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
