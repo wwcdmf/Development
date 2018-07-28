@@ -25,25 +25,26 @@ class MyOffersVC: UIViewController {
     
  
    //Data Loaded Toggle Variables. When to Load
-    var dataLoaded = false
+    //var dataLoaded = false
    //
     
-   
+  
 
     //
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-     
-        
+       
         offersTableView.separatorStyle = .none
         offersTableView.delegate = self
         offersTableView.dataSource = self
        
 
           self.offersTableView.reloadData()
+        
+     
+
         //
         let pastelView = PastelView(frame: trueView.bounds)
         pastelView.startPastelPoint = .bottomLeft
@@ -56,11 +57,12 @@ class MyOffersVC: UIViewController {
         pastelView.startAnimation()
         trueView.insertSubview(pastelView, at: 0)
         //
-        profileImage.isUserInteractionEnabled = true
-        profileImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.ProfileSegue)))
+//        profileImage.isUserInteractionEnabled = true
+//        profileImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.ProfileSegue)))
     
-        //
-     
+        
+        
+        
     }
 
 
@@ -70,17 +72,19 @@ class MyOffersVC: UIViewController {
       
         self.offersTableView.reloadData()
        
-        print("\(self.dataLoaded): PHASE 0")
-        if self.dataLoaded == false {
-         DataService.instance.getCurrentUser { (userData) in
-            
-            print("LOADING USER DATA INTO MYOFFERS")
-            
-          self.dataLoaded.toggle()
-            print("\(self.dataLoaded): PHASE 1")
-            self.profileImage.image = userData.profileImageload
-        }
-        }
+//        print("\(self.dataLoaded): PHASE 0")
+//        if self.dataLoaded == false {
+//         DataService.instance.getCurrentUser { (userData) in
+//
+//            print("LOADING USER DATA INTO MYOFFERS")
+//
+//          self.dataLoaded.toggle()
+//            print("\(self.dataLoaded): PHASE 1")
+//            self.profileImage.image = userData.profileImageload
+//
+//
+//        }
+//        }
     }
 }
 

@@ -45,6 +45,8 @@
 		F781A22820E3357A007FD781 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F781A21A20E3357A007FD781 /* AuthService.swift */; };
 		F781A22A20E335E9007FD781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F781A22920E335E9007FD781 /* Main.storyboard */; };
 		F781A22F20E33895007FD781 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F781A22E20E33895007FD781 /* GoogleService-Info.plist */; };
+		F782CA29210BE99600D351E9 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F782CA28210BE99600D351E9 /* HeaderView.xib */; };
+		F782CA2B210BEAFC00D351E9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782CA2A210BEAFC00D351E9 /* HeaderView.swift */; };
 		F793F29A210A917800FB48C0 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F793F299210A917800FB48C0 /* UIViewExt.swift */; };
 		F798303E20F5AF44006EB7EB /* MyOffersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F798303D20F5AF44006EB7EB /* MyOffersVC.swift */; };
 		F798304020F5B03D006EB7EB /* OfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F798303F20F5B03D006EB7EB /* OfferCell.swift */; };
@@ -109,6 +111,8 @@
 		F781A21A20E3357A007FD781 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F781A22920E335E9007FD781 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F781A22E20E33895007FD781 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F782CA28210BE99600D351E9 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		F782CA2A210BEAFC00D351E9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		F793F299210A917800FB48C0 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		F798303D20F5AF44006EB7EB /* MyOffersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOffersVC.swift; sourceTree = "<group>"; };
 		F798303F20F5B03D006EB7EB /* OfferCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCell.swift; sourceTree = "<group>"; };
@@ -347,6 +351,8 @@
 				F781A20E20E33579007FD781 /* UIImageViewLibrary.swift */,
 				F781A20D20E33579007FD781 /* UITextFieldLibrary.swift */,
 				F781A21320E33579007FD781 /* UIButtonLibrary.swift */,
+				F782CA28210BE99600D351E9 /* HeaderView.xib */,
+				F782CA2A210BEAFC00D351E9 /* HeaderView.swift */,
 			);
 			path = "UI Objects";
 			sourceTree = "<group>";
@@ -445,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F781A1E920E3346B007FD781 /* LaunchScreen.storyboard in Resources */,
+				F782CA29210BE99600D351E9 /* HeaderView.xib in Resources */,
 				F781A1E620E3346B007FD781 /* Assets.xcassets in Resources */,
 				F781A22F20E33895007FD781 /* GoogleService-Info.plist in Resources */,
 				F781A22A20E335E9007FD781 /* Main.storyboard in Resources */,
@@ -538,6 +545,7 @@
 				F704E8B821053DE5003B6F38 /* Announcements.swift in Sources */,
 				F708ECC621064AA5009B7952 /* ManagementLocationOffers_1.swift in Sources */,
 				F781A1F320E3350E007FD781 /* CreateUser_1.swift in Sources */,
+				F782CA2B210BEAFC00D351E9 /* HeaderView.swift in Sources */,
 				F7CEC34620FACCF900B7F195 /* UITabBarLibrary.swift in Sources */,
 				F7C259F420E971820033AC29 /* AnimatedGradient.swift in Sources */,
 				F781A20120E33546007FD781 /* CreateUserVC.swift in Sources */,

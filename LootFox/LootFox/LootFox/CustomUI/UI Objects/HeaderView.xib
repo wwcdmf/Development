@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14278.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="LootFox" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Nye-Fk-qF2"/>
+                <outlet property="profileImage" destination="dnO-ji-FVI" id="iLN-Ki-fTi"/>
+                <outlet property="statusLbl" destination="2ZP-x0-1HL" id="iF8-BR-L18"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="455" height="94"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ftS-yy-9ag" customClass="BorderBottom" customModule="LootFox" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="455" height="94"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="dnO-ji-FVI" customClass="ProfileImageVew" customModule="LootFox" customModuleProvider="target">
+                            <rect key="frame" x="15" y="27" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="isI-tY-QMr"/>
+                                <constraint firstAttribute="height" constant="40" id="rgc-9r-tFf"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Platinum Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZP-x0-1HL">
+                            <rect key="frame" x="163.5" y="37.5" width="128.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PT-Nt-3XY">
+                            <rect key="frame" x="410" y="36" width="30" height="22"/>
+                            <state key="normal" image="dotdot"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92609850888324874" green="0.92609850888324874" blue="0.92609850888324874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="dnO-ji-FVI" firstAttribute="centerY" secondItem="ftS-yy-9ag" secondAttribute="centerY" id="Exq-bE-ctt"/>
+                        <constraint firstItem="2ZP-x0-1HL" firstAttribute="centerX" secondItem="ftS-yy-9ag" secondAttribute="centerX" id="Kuj-UT-qwK"/>
+                        <constraint firstItem="8PT-Nt-3XY" firstAttribute="centerY" secondItem="2ZP-x0-1HL" secondAttribute="centerY" id="TQ3-TR-vn3"/>
+                        <constraint firstItem="dnO-ji-FVI" firstAttribute="leading" secondItem="ftS-yy-9ag" secondAttribute="leading" constant="15" id="Xdt-Ks-Glp"/>
+                        <constraint firstAttribute="trailing" secondItem="8PT-Nt-3XY" secondAttribute="trailing" constant="15" id="dLU-u2-HN5"/>
+                        <constraint firstItem="2ZP-x0-1HL" firstAttribute="centerY" secondItem="ftS-yy-9ag" secondAttribute="centerY" id="pW8-W7-0aJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ftS-yy-9ag" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="T6m-2Q-IbW"/>
+                <constraint firstAttribute="bottom" secondItem="ftS-yy-9ag" secondAttribute="bottom" id="Ugw-4M-lmX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ftS-yy-9ag" secondAttribute="trailing" id="eZT-0W-RnM"/>
+                <constraint firstItem="ftS-yy-9ag" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uRp-6b-xh3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-306.5" y="-167"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="defaultProfileImage" width="102" height="102"/>
+        <image name="dotdot" width="30" height="8"/>
+    </resources>
+</document>

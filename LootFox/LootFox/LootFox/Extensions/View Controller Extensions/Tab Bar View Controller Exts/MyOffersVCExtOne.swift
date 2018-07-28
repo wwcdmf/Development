@@ -12,7 +12,8 @@ import UIKit
 
 
 extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
-  
+    
+
    
     
 // Return of of Sections in the Given Table View
@@ -56,14 +57,37 @@ extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
        
     
         
-        print("\((trueView.frame.width) * 1.33) : Height of Content")
+        //print("\((trueView.frame.width) * 1.33) : Height of Content")
         
-        return (trueView.frame.width) * 1.4
+        return (trueView.frame.width) * 1.333
         
     
     }
     
+    
 
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let borderBottom = UIView(frame: CGRect(x:0, y:45, width: tableView.bounds.size.width, height: 1.0))
+        
+        borderBottom.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        
+        
+        let header = HeaderView()
+        
+        header.addSubview(borderBottom)
+       
+        return header
+        
+
+    }
+
+   func tableView(_ tableView: UITableView,
+                  heightForHeaderInSection section: Int) -> CGFloat {
+    
+    
+    return 45
+    }
     
     
 // Function for handling when a given cell is selected return the indexPath/ recognize it as "current cell"
