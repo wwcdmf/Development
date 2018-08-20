@@ -5,17 +5,13 @@
 //  Created by Landon Carr on 7/17/18.
 //  Copyright © 2018 Landon Carr. All rights reserved.
 //
-
 import Foundation
 import UIKit
 
-
-
+// Ext: TableView Configuration
 extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
     
 
-   
-    
 // Return of of Sections in the Given Table View
     func numberOfSections(in tableView: UITableView) -> Int {
         
@@ -42,9 +38,6 @@ extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
         let advertisementExpireTest = "12-31-2018"
         
         cell.configureCell(companyName: companyNameTest, companyLogo: companyLogoTest!, advertisement: adResult!, advertisementPostTimeStamp: advertismentPostTimeStampTest, advertisementURL: "", advertisementExpire: advertisementExpireTest, advertisementBlip: "")
-        
-        
-        
        
         return cell
         
@@ -53,29 +46,23 @@ extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
 // Returns Cells that have a height of X
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-      
-       
-    
+
+        return (trueView.frame.width) * 1.29
         
-        //print("\((trueView.frame.width) * 1.33) : Height of Content")
-        
-        return (trueView.frame.width) * 1.333
-        
-    
     }
     
     
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let borderBottom = UIView(frame: CGRect(x:0, y:45, width: tableView.bounds.size.width, height: 1.0))
-        
-        borderBottom.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-        
+//        let borderBottom = UIView(frame: CGRect(x:0, y:40, width: tableView.bounds.size.width, height: 0.3))
+//
+//        borderBottom.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+//
         
         let header = HeaderView()
         
-        header.addSubview(borderBottom)
+        //header.addSubview(borderBottom)
        
         return header
         
@@ -86,7 +73,7 @@ extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
                   heightForHeaderInSection section: Int) -> CGFloat {
     
     
-    return 45
+    return 75
     }
     
     
@@ -124,42 +111,34 @@ extension MyOffersVC: UITableViewDelegate, UITableViewDataSource {
        
         
         print("selectedDataArray after append \(size)")
-       
-//        print("Inside didSelectRowAtFunction: \(sendSelectedData ?? "default Value")")
         
         //Now here I am performing the segue action after cell selection to the other view controller by using the segue Identifier Name
-     
-        self.performSegue(withIdentifier: "MyOffersLoadSegue", sender: self)
-    }
-    
-    
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if (segue.identifier == "MyOffersLoadSegue") {
-            
-            let viewController = segue.destination as! MyOffersLoadVC
-            
-            viewController.recievedDataArray = selectedDataArray
-            
-            
-       print("override func prepare called")
+       
+            presentStoryAnimationController.selectedCardFrame = currentCell.frame
+//dismissStoryAnimationController.selectedCardFrame = cell.frame
+        
+        self.performSegue(withIdentifier: "MyOffersLoadSegue", sender: self)
+        
+    }
+    
    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let destinationViewController = segue.destination as! MyOffersLoadVC
+//        destinationViewController.transitioningDelegate = self
+//        destinationViewController.recievedDataArray = selectedDataArray
+//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
+        if (segue.identifier == "MyOffersLoadSegue") {
+
+            let viewController = segue.destination as! MyOffersLoadVC
+
+            viewController.recievedDataArray = selectedDataArray
+            print("override func prepare called")
+        }
     }
 }
 
 
-}
 
-
-
-
-extension MyOffersVC {
-    
-   //// Progress Bar
-
-
-
-}

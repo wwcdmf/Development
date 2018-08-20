@@ -10,7 +10,22 @@ import UIKit
 
 class MyOffersLoadVC: UIViewController {
 
+    //////
+    @IBOutlet private weak var contentContainerView: UIView!
+    @IBOutlet private weak var containerLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var containerTrailingConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var containerTopConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var containerBottomConstraint: NSLayoutConstraint!
     
+    /// Header Image Height
+    @IBOutlet private weak var headerImageHeightConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var headerImageView: UIImageView!
+    
+    
+    
+    
+    
+    /////
     
     @IBOutlet weak var imageViewHolder: TopRoundedView!
     @IBOutlet weak var testSegueDataText: UILabel!
@@ -23,7 +38,7 @@ class MyOffersLoadVC: UIViewController {
         
         self.imageViewHolder.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(self.panGestureRecognizerHandler)))
         
-        
+        self.headerImageView.image = recievedDataArray[0] as? UIImage
         
         
         
@@ -32,8 +47,8 @@ class MyOffersLoadVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        self.MyOfferLoadAdvertisement.image = recievedDataArray[0] as? UIImage
+         self.headerImageView.image = recievedDataArray[0] as? UIImage
+      //  self.MyOfferLoadAdvertisement.image = recievedDataArray[0] as? UIImage
     }
     
 
@@ -63,6 +78,30 @@ class MyOffersLoadVC: UIViewController {
             }
         }
     }
-
+////
+    internal func positionContainer(left: CGFloat, right: CGFloat, top: CGFloat, bottom: CGFloat) {
+        containerLeadingConstraint.constant = left
+        containerTrailingConstraint.constant = right
+        containerTopConstraint.constant = top
+        containerBottomConstraint.constant = bottom
+        view.layoutIfNeeded()
+    }
+    
+    internal func setHeaderHeight(_ height: CGFloat) {
+        headerImageHeightConstraint.constant = height
+        view.layoutIfNeeded()
+    }
+    
+    internal func configureRoundedCorners(shouldRound: Bool) {
+        headerImageView.layer.cornerRadius = shouldRound ? 14.0 : 0.0
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    
+    
+    /////
 
 }

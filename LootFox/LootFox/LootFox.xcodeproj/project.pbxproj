@@ -60,7 +60,10 @@
 		F7C46391210457BF003B5B71 /* ManagementWeeklyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C46390210457BF003B5B71 /* ManagementWeeklyVC.swift */; };
 		F7C7CE6A20F2776200B537AB /* CreateUser_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C7CE6920F2776200B537AB /* CreateUser_2.swift */; };
 		F7CEC34620FACCF900B7F195 /* UITabBarLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CEC34520FACCF900B7F195 /* UITabBarLibrary.swift */; };
-		F7DFFA9C20FE53A00041F11F /* MyOffersVCExtOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFFA9B20FE53A00041F11F /* MyOffersVCExtOne.swift */; };
+		F7DFFA9C20FE53A00041F11F /* MyOffersVCExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFFA9B20FE53A00041F11F /* MyOffersVCExt.swift */; };
+		F7F15659210CFA9C005A019C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F15658210CFA9C005A019C /* Functions.swift */; };
+		F7F1565D210D1A12005A019C /* presentAnim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F1565C210D1A12005A019C /* presentAnim.swift */; };
+		F7F6DF15210CC21C00FEFF1B /* PushPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6DF14210CC21C00FEFF1B /* PushPop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,7 +129,10 @@
 		F7C46390210457BF003B5B71 /* ManagementWeeklyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementWeeklyVC.swift; sourceTree = "<group>"; };
 		F7C7CE6920F2776200B537AB /* CreateUser_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUser_2.swift; sourceTree = "<group>"; };
 		F7CEC34520FACCF900B7F195 /* UITabBarLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarLibrary.swift; sourceTree = "<group>"; };
-		F7DFFA9B20FE53A00041F11F /* MyOffersVCExtOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOffersVCExtOne.swift; sourceTree = "<group>"; };
+		F7DFFA9B20FE53A00041F11F /* MyOffersVCExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOffersVCExt.swift; sourceTree = "<group>"; };
+		F7F15658210CFA9C005A019C /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		F7F1565C210D1A12005A019C /* presentAnim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presentAnim.swift; sourceTree = "<group>"; };
+		F7F6DF14210CC21C00FEFF1B /* PushPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +236,7 @@
 		F781A20A20E33579007FD781 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				F7F6DF0F210CBF5100FEFF1B /* Animations */,
 				F79DB5F02105934500559653 /* Third Party UI Objects */,
 				F79DB5EF2105914400559653 /* UI Objects */,
 				F70950F220FAA51100CE4ED4 /* LootFox-Bridging-Header.h */,
@@ -243,6 +250,7 @@
 				F781A21520E33579007FD781 /* User.swift */,
 				F7B8B4E220E9DA99007528D3 /* DataTest.swift */,
 				F704E8B721053DE5003B6F38 /* Announcements.swift */,
+				F7F15658210CFA9C005A019C /* Functions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -318,7 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				F781A1F220E3350E007FD781 /* ParticleEmitter.swift */,
-				F7DFFA9B20FE53A00041F11F /* MyOffersVCExtOne.swift */,
+				F7DFFA9B20FE53A00041F11F /* MyOffersVCExt.swift */,
 			);
 			path = "Tab Bar View Controller Exts";
 			sourceTree = "<group>";
@@ -376,6 +384,15 @@
 				F708ECC321064998009B7952 /* BeaconCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		F7F6DF0F210CBF5100FEFF1B /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				F7F6DF14210CC21C00FEFF1B /* PushPop.swift */,
+				F7F1565C210D1A12005A019C /* presentAnim.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,6 +544,8 @@
 				F704E8B4210533FD003B6F38 /* ManagementOfferDesignVC.swift in Sources */,
 				F7C46391210457BF003B5B71 /* ManagementWeeklyVC.swift in Sources */,
 				F798304020F5B03D006EB7EB /* OfferCell.swift in Sources */,
+				F7F1565D210D1A12005A019C /* presentAnim.swift in Sources */,
+				F7F15659210CFA9C005A019C /* Functions.swift in Sources */,
 				F781A22820E3357A007FD781 /* AuthService.swift in Sources */,
 				F7C259F020E9494D0033AC29 /* FeedVC.swift in Sources */,
 				F7B8B4E320E9DA99007528D3 /* DataTest.swift in Sources */,
@@ -554,11 +573,12 @@
 				F7599D7320E8085F00A42536 /* Rotation.swift in Sources */,
 				F798303E20F5AF44006EB7EB /* MyOffersVC.swift in Sources */,
 				F704E8B021052705003B6F38 /* ManagementFeedbackVC.swift in Sources */,
-				F7DFFA9C20FE53A00041F11F /* MyOffersVCExtOne.swift in Sources */,
+				F7DFFA9C20FE53A00041F11F /* MyOffersVCExt.swift in Sources */,
 				F708ECBF210633E5009B7952 /* ManagementOfferDesign_1.swift in Sources */,
 				F7C259FB20E984480033AC29 /* bottomFC.swift in Sources */,
 				F781A20420E33546007FD781 /* SettingsVC.swift in Sources */,
 				F781A22620E3357A007FD781 /* UIButtonImages.swift in Sources */,
+				F7F6DF15210CC21C00FEFF1B /* PushPop.swift in Sources */,
 				F781A20620E33546007FD781 /* ManagementVC.swift in Sources */,
 				F781A22720E3357A007FD781 /* RelationService.swift in Sources */,
 				F704E8B221052791003B6F38 /* ManagementLocationOffersVC.swift in Sources */,

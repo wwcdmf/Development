@@ -15,3 +15,15 @@
 //
 //    }
 //}
+
+
+//        let pastelView = PastelView(frame: trueView.bounds)
+//        pastelView.startPastelPoint = .bottomLeft
+//        pastelView.endPastelPoint = .topRight
+//
+//        pastelView.animationDuration = 3.0
+//
+//        pastelView.setPastelGradient(CustomGradient.trueSunset)
+//
+//        pastelView.startAnimation()
+//        trueView.insertSubview(pastelView, at: 0)
